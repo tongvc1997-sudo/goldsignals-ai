@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authorized — GoldSignals AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --gold: #F5C518; --bg: #0A0D18; --border: #1E2A42; --text: #E8EDF5; --muted: #6B7A99; --green: #3DDA8A; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 32px;
+    }
+    .check-ring {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--green);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 48px;
+      margin-bottom: 32px;
+      animation: pop 0.4s ease-out both;
+      box-shadow: 0 0 40px rgba(61,218,138,0.2);
+    }
+    @keyframes pop {
+      0% { transform: scale(0.6); opacity: 0; }
+      80% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: 28px; font-weight: 700;
+      color: var(--green); margin-bottom: 12px;
+    }
+    p { font-size: 16px; color: var(--muted); max-width: 400px; line-height: 1.6; margin-bottom: 8px; }
+    .code-box {
+      background: #0D1220; border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px 24px;
+      font-family: 'Space Mono', monospace; font-size: 13px;
+      color: var(--muted); margin: 28px 0;
+      max-width: 500px; width: 100%;
+      word-break: break-all;
+    }
+    .code-box span { color: var(--gold); }
+    a {
+      color: var(--gold); text-decoration: none; font-size: 14px;
+      font-family: 'Space Mono', monospace;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="check-ring">✓</div>
+  <h1>Authorization Successful</h1>
+  <p>GoldSignals AI has been successfully authorized with TikTok.</p>
+  <p>You may now close this window. The system will begin publishing automatically.</p>
+
+  <div class="code-box" id="params">
+    <span>status:</span> authorized<br />
+    <span>app:</span> GoldSignals AI<br />
+    <span>scope:</span> video.publish<br />
+    <span>timestamp:</span> <span id="ts">—</span>
+  </div>
+
+  <a href="/index.html">← Back to GoldSignals AI</a>
+
+  <script>
+    document.getElementById('ts').textContent = new Date().toISOString();
+
+    // Display any OAuth params from URL for debugging
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('code')) {
+      const box = document.getElementById('params');
+      box.innerHTML += `<br /><span>code:</span> ${params.get('code').substring(0,12)}…`;
+    }
+    if (params.get('state')) {
+      const box = document.getElementById('params');
+      box.innerHTML += `<br /><span>state:</span> ${params.get('state')}`;
+    }
+  </script>
+
+</body>
+</html>

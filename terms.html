@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — GoldSignals AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #F5C518; --bg: #0A0D18; --surface: #121828;
+      --border: #1E2A42; --text: #E8EDF5; --muted: #6B7A99;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; line-height: 1.7; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px; border-bottom: 1px solid var(--border);
+      background: rgba(10,13,24,0.95); backdrop-filter: blur(12px);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon {
+      width: 38px; height: 38px; background: var(--gold); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Space Mono', monospace; font-weight: 700; font-size: 16px; color: #0A0D18;
+    }
+    .logo-text { font-family: 'Space Mono', monospace; font-size: 17px; font-weight: 700; color: var(--text); }
+    .logo-text span { color: var(--gold); }
+    nav ul { list-style: none; display: flex; gap: 32px; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    nav a:hover { color: var(--text); }
+
+    .page { max-width: 740px; margin: 0 auto; padding: 64px 32px 100px; }
+    .page-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,197,24,0.1); border: 1px solid rgba(245,197,24,0.3);
+      border-radius: 100px; padding: 5px 14px; font-size: 11px;
+      font-family: 'Space Mono', monospace; color: var(--gold);
+      letter-spacing: 0.08em; margin-bottom: 24px;
+    }
+    h1 { font-family: 'Space Mono', monospace; font-size: 36px; font-weight: 700; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 48px; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+
+    h2 {
+      font-size: 16px; font-weight: 600; color: var(--gold);
+      font-family: 'Space Mono', monospace;
+      margin-bottom: 12px; margin-top: 36px;
+    }
+    p { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { font-size: 15px; color: var(--muted); margin-bottom: 6px; }
+
+    .warning-box {
+      background: rgba(245,197,24,0.06);
+      border: 1px solid rgba(245,197,24,0.25);
+      border-radius: 14px; padding: 20px 24px; margin: 32px 0;
+    }
+    .warning-box p { color: var(--text); margin: 0; font-size: 14px; }
+    .warning-box strong { color: var(--gold); }
+
+    footer {
+      border-top: 1px solid var(--border); padding: 32px 48px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    footer .copy { font-size: 13px; color: var(--muted); }
+    footer nav ul { gap: 20px; }
+    @media (max-width: 640px) { nav { padding: 16px 20px; } .page { padding: 40px 20px 80px; } h1 { font-size: 26px; } footer { padding: 24px 20px; flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="logo">
+    <div class="logo-icon">GS</div>
+    <span class="logo-text"><span>Gold</span>Signals AI</span>
+  </a>
+  <ul>
+    <li><a href="/terms.html" style="color:var(--text)">Terms</a></li>
+    <li><a href="/privacy.html">Privacy</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="page-badge">Legal</div>
+  <h1>Terms of Service</h1>
+  <p class="updated">Effective date: January 1, 2025 · Last updated: July 1, 2025</p>
+  <hr class="divider" />
+
+  <div class="warning-box">
+    <p><strong>⚠ Important Disclaimer:</strong> GoldSignals AI publishes trading signal content for <strong>educational and informational purposes only</strong>. Nothing on this platform constitutes financial advice. You are solely responsible for your own trading decisions.</p>
+  </div>
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>By accessing or using GoldSignals AI ("the Service", "we", "our"), you agree to be bound by these Terms of Service. If you do not agree, please do not use the Service.</p>
+
+  <h2>2. Description of Service</h2>
+  <p>GoldSignals AI is an automated content publishing system that:</p>
+  <ul>
+    <li>Monitors Telegram channels for XAUUSD (Gold) trading signals.</li>
+    <li>Generates short-form vertical videos based on those signals.</li>
+    <li>Publishes those videos to TikTok via the official TikTok Content Posting API.</li>
+  </ul>
+  <p>The Service publishes content exclusively to our own TikTok account (<strong>@goldsignals_ai</strong>). No user accounts or personal data from viewers are accessed.</p>
+
+  <h2>3. No Financial Advice</h2>
+  <p>All content produced and published by GoldSignals AI is strictly for <strong>educational and informational purposes only</strong>. It does not constitute:</p>
+  <ul>
+    <li>Financial advice or investment recommendations</li>
+    <li>A solicitation to buy or sell any financial instrument</li>
+    <li>A guarantee of any trading outcome or profit</li>
+  </ul>
+  <p>Trading foreign exchange and commodities (including Gold/XAUUSD) involves significant risk of loss and is not suitable for all investors. Past signal performance does not guarantee future results.</p>
+
+  <h2>4. User Responsibility</h2>
+  <p>You acknowledge and agree that:</p>
+  <ul>
+    <li>You are solely responsible for all trading decisions you make.</li>
+    <li>You should consult a licensed financial advisor before making any investment decisions.</li>
+    <li>GoldSignals AI bears no liability for any financial loss resulting from signals viewed on our platform.</li>
+    <li>You will not hold GoldSignals AI liable for any direct, indirect, incidental, or consequential damages.</li>
+  </ul>
+
+  <h2>5. TikTok Platform Compliance</h2>
+  <p>GoldSignals AI operates in compliance with TikTok's Terms of Service, Community Guidelines, and Developer Policies. We use the TikTok Content Posting API solely for uploading content to our own account. We do not scrape, store, or misuse any TikTok platform data.</p>
+
+  <h2>6. Intellectual Property</h2>
+  <p>All video content, branding, and signal visualizations created by GoldSignals AI are our intellectual property. You may not copy, reproduce, or redistribute our content without written permission.</p>
+
+  <h2>7. Availability & Changes</h2>
+  <p>We reserve the right to modify, suspend, or discontinue the Service at any time. We may update these Terms at any time; continued use of the Service constitutes acceptance of updated Terms.</p>
+
+  <h2>8. Governing Law</h2>
+  <p>These Terms are governed by the laws of Vietnam. Any disputes shall be resolved in the courts of Ho Chi Minh City, Vietnam.</p>
+
+  <h2>9. Contact</h2>
+  <p>For questions about these Terms, please contact us at: <strong>legal@goldsignals.ai</strong></p>
+</div>
+
+<footer>
+  <span class="copy">© 2025 GoldSignals AI. For educational purposes only.</span>
+  <nav><ul>
+    <li><a href="/terms.html">Terms of Service</a></li>
+    <li><a href="/privacy.html">Privacy Policy</a></li>
+  </ul></nav>
+</footer>
+
+</body>
+</html>
